@@ -1,0 +1,61 @@
+.root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 6;
+  opacity: 0;
+  transition: opacity 340ms ease;
+}
+
+.active {
+  opacity: 1;
+}
+
+.canvasSlot {
+  position: absolute;
+  right: clamp(-46px, 2vw, 34px);
+  top: max(92px, 9vh);
+  width: min(70vw, 1080px);
+  height: min(92vh, 1060px);
+  border-radius: 40px;
+  overflow: hidden;
+  mix-blend-mode: multiply;
+  filter: contrast(1.18) saturate(0.08);
+  mask-image: radial-gradient(circle at 56% 48%, rgba(0, 0, 0, 0.98) 24%, rgba(0, 0, 0, 0.82) 53%, rgba(0, 0, 0, 0.28) 78%, transparent 100%);
+  opacity: 0.92;
+}
+
+.canvasSlot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 60% 40%, rgba(0, 0, 0, 0.08) 0%, transparent 65%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      rgba(0, 0, 0, 0) 1px,
+      rgba(0, 0, 0, 0) 3px
+    );
+}
+
+@media (max-width: 1100px) {
+  .canvasSlot {
+    right: -20px;
+    width: min(82vw, 920px);
+  }
+}
+
+@media (max-width: 920px) {
+  .canvasSlot {
+    width: 100%;
+    right: 0;
+    top: 84px;
+    height: 70vh;
+    mask-image: radial-gradient(circle at 50% 56%, rgba(0, 0, 0, 0.95) 25%, rgba(0, 0, 0, 0.66) 56%, rgba(0, 0, 0, 0.16) 84%, transparent 100%);
+    filter: contrast(1.12) saturate(0.04);
+    opacity: 0.84;
+  }
+}

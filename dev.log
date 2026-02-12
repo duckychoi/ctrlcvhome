@@ -1,0 +1,63 @@
+
+> vibelabs@0.1.0 dev
+> next dev --webpack
+
+⚠ Port 3000 is in use by process 551164, using available port 3002 instead.
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3002
+- Network:       http://192.168.45.124:3002
+- Environments: .env.local, .env.development
+
+✓ Starting...
+✓ Ready in 1577ms
+○ Compiling / ...
+ GET / 200 in 14.7s (compile: 14.3s, render: 421ms)
+ GET / 200 in 60ms (compile: 8ms, render: 52ms)
+ GET /professor 200 in 827ms (compile: 795ms, render: 32ms)
+ GET /family 200 in 621ms (compile: 591ms, render: 30ms)
+ GET /research 200 in 658ms (compile: 623ms, render: 34ms)
+ GET /professor 200 in 72ms (compile: 5ms, render: 67ms)
+ GET /research 200 in 17ms (compile: 4ms, render: 13ms)
+ GET /publications 200 in 509ms (compile: 480ms, render: 29ms)
+ GET / 200 in 100ms (compile: 25ms, render: 75ms)
+ GET /research 200 in 160ms (compile: 76ms, render: 84ms)
+ GET /publications 200 in 51ms (compile: 22ms, render: 29ms)
+ GET /lecture 200 in 1243ms (compile: 1209ms, render: 34ms)
+ GET /notice 200 in 909ms (compile: 882ms, render: 27ms)
+ GET /publications 200 in 15ms (compile: 4ms, render: 11ms)
+ GET /research 200 in 14ms (compile: 4ms, render: 10ms)
+ GET /family 200 in 39ms (compile: 19ms, render: 20ms)
+ GET /professor 200 in 46ms (compile: 25ms, render: 22ms)
+ GET / 200 in 16ms (compile: 5ms, render: 11ms)
+ GET /publications 200 in 13ms (compile: 3ms, render: 10ms)
+ GET /lecture 200 in 17ms (compile: 4ms, render: 13ms)
+ GET /notice 200 in 18ms (compile: 4ms, render: 14ms)
+ GET /research 200 in 20ms (compile: 5ms, render: 15ms)
+ GET /family 200 in 21ms (compile: 4ms, render: 17ms)
+ GET / 200 in 15ms (compile: 4ms, render: 11ms)
+ GET /publications 200 in 217ms (compile: 79ms, render: 138ms)
+ GET /lecture 200 in 344ms (compile: 56ms, render: 288ms)
+ GET /notice 200 in 70ms (compile: 21ms, render: 49ms)
+ GET /lecture 200 in 13ms (compile: 3ms, render: 10ms)
+ GET /publications 200 in 13ms (compile: 3ms, render: 10ms)
+ GET /research 200 in 46ms (compile: 18ms, render: 28ms)
+ GET /publications 200 in 67ms (compile: 22ms, render: 44ms)
+ GET /lecture 200 in 58ms (compile: 25ms, render: 33ms)
+ GET /notice 200 in 40ms (compile: 5ms, render: 34ms)
+ GET /family 200 in 17ms (compile: 5ms, render: 13ms)
+ GET /professor 200 in 43ms (compile: 18ms, render: 25ms)
+ GET / 200 in 53ms (compile: 15ms, render: 38ms)
+ GET /professor 200 in 14ms (compile: 3ms, render: 11ms)
+ GET /notice 200 in 13ms (compile: 3ms, render: 10ms)
+ GET / 200 in 14ms (compile: 4ms, render: 10ms)
+ GET /family 200 in 16ms (compile: 5ms, render: 11ms)
+ GET /professor 200 in 14ms (compile: 3ms, render: 11ms)
+ GET / 200 in 18ms (compile: 5ms, render: 13ms)
+ GET /professor 200 in 18ms (compile: 4ms, render: 13ms)
+ GET / 200 in 18ms (compile: 4ms, render: 15ms)
+ GET /professor 200 in 14ms (compile: 3ms, render: 10ms)
+ GET /family 200 in 33ms (compile: 17ms, render: 15ms)
+ GET /research 200 in 60ms (compile: 19ms, render: 41ms)
+ GET /publications 200 in 66ms (compile: 35ms, render: 31ms)
+ GET / 200 in 166ms (compile: 128ms, render: 38ms)
+✓ Compiled in 1147ms
