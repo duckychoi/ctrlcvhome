@@ -16,8 +16,11 @@ export default function SplineBackground() {
       {/* Dark gradient overlays for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-white/60 z-10 pointer-events-none" />
       
+      {/* Hide Spline watermark overlay */}
+      <div className="absolute bottom-0 right-0 w-32 h-12 bg-white/60 backdrop-blur-sm z-20 pointer-events-none rounded-tl-xl" />
+      
       <iframe
-        src='https://my.spline.design/nexbotrobotcharacterconcept-LoUryRHcsWrV0pztRLvc7RQO/'
+        src='https://my.spline.design/nexbotrobotcharacterconcept-LoUryRHcsWrV0pztRLvc7RQO/?ui_controls=0&ui_infos=0&ui_watermark=0'
         frameBorder='0'
         width='100%'
         height='100%'
