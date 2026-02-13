@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Header from './components/Header'
 import Link from 'next/link'
+import SplineBackground from './components/SplineBackground'
 
 const researchAreas = [
   {
@@ -47,11 +48,16 @@ const staggerContainer = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen softrealism-bg">
-      <Header />
+    <div className="min-h-screen relative overflow-x-hidden">
+      <SplineBackground />
       
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      {/* Header - clickable */}
+      <div className="relative z-20 pointer-events-auto">
+        <Header />
+      </div>
+      
+      {/* Hero Section - pointer-events-none to allow Spline interaction */}
+      <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 softrealism-vignette" />
         
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
@@ -77,7 +83,8 @@ export default function Home() {
               Developing intelligent robots that make <strong>better decisions</strong> even in environments with <strong>disturbances and uncertainties</strong>
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Only buttons are clickable */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto">
               <Link
                 href="/research"
                 className="px-8 py-4 rounded-full bg-neutral-900 text-white font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
@@ -93,9 +100,9 @@ export default function Home() {
             </div>
           </motion.div>
           
-          {/* Stats */}
+          {/* Stats - pointer-events-auto for interaction */}
           <motion.div
-            className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6"
+            className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 pointer-events-auto"
             variants={staggerContainer}
             initial="initial"
             animate="animate"
@@ -119,6 +126,8 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Content Sections with solid background to cover Spline */}
+      <div className="relative z-10 bg-white">
       {/* About Section */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
@@ -359,7 +368,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-black/10">
+      <footer className="py-12 px-6 border-t border-black/10 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
@@ -384,6 +393,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      </div>
     </div>
   )
 }
