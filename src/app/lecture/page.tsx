@@ -5,24 +5,24 @@ import Header from '../components/Header'
 
 const undergraduateCourses = [
   {
-    semester: '2025-1',
+    semester: '2026-1',
     code: '',
     name: '제어공학 (Control Engineering)',
     schedule: '월/화',
     note: 'eclass 참고',
   },
   {
-    semester: '2025-1',
+    semester: '2026-1',
     code: '',
     name: '마이크로프로세서 (Microprocessor)',
     schedule: '월/화',
     note: 'eclass 참고',
   },
   {
-    semester: '2024-2',
+    semester: '2026-1',
     code: '',
-    name: '기초전자회로실험(1, 2) (Basic Electronic Circuit Lab)',
-    schedule: '',
+    name: '캡스톤 디자인 (Capstone Design)',
+    schedule: '금요일',
     note: '',
   },
 ]
