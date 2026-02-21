@@ -23,7 +23,6 @@
     "three": "^0.182.0"
   },
   "devDependencies": {
-    "@tailwindcss/oxide-win32-x64-msvc": "^4.1.18",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19.2.2",
@@ -31,7 +30,6 @@
     "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
-    "lightningcss-win32-x64-msvc": "^1.31.1",
     "playwright": "^1.58.2",
     "tailwindcss": "^4",
     "typescript": "^5"
