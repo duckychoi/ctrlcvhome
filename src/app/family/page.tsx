@@ -37,6 +37,13 @@ const currentMembers: { phd: Member[]; master: Member[]; undergraduate: Member[]
       research: 'Vision-based SLAM, RL based Control for Legged robot',
       image: '/figure/family/이석준.jpg',
     },
+    {
+      name: 'Choi Woo Seok',
+      nameKr: '최우석',
+      role: 'Undergraduate Student',
+      research: 'Vision-based SLAM, RL based Control for Legged robot',
+      image: '/figure/family/최우석.png',
+    },
   ],
 }
 
