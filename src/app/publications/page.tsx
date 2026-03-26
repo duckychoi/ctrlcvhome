@@ -5,12 +5,40 @@ import Header from '../components/Header'
 
 const internationalJournals = [
   {
-    number: 26,
+    number: 29,
+    authors: 'Y. J. Lee, W. J. Ahn, D. S. Pae, H. D. Choi*, and M. T. Lim*',
+    title: 'Exponentially Dissipative Vehicle Path Tracking Control Considering Roll Safety Under Network Communications',
+    venue: 'Control Engineering Practice, Elsevier',
+    note: 'vol. 169, p. 106744, Apr. 2026 (IF: 4.6)',
+    doi: '10.1016/j.conengprac.2025.106744',
+    year: 2026,
+  },
+  {
+    number: 28,
     authors: 'C. H. Park and H. D. Choi*',
     title: 'Towards Maximizing Feature Efficiency: All-in-One Image Restoration via Radial Basis Attention',
     venue: 'Pattern Recognition, Elsevier',
-    note: '(Accepted)',
-    year: 2025,
+    note: 'vol. 173, p. 112815, May 2026 (IF: 7.6)',
+    doi: '10.1016/j.patcog.2025.112815',
+    year: 2026,
+  },
+  {
+    number: 27,
+    authors: 'H. D. Choi and S. H. You*',
+    title: 'Fuzzy Sampled-Data Extended Dissipative Tracking for Quadrotor UAVs Under Cyber Attack',
+    venue: 'IEEE Access',
+    note: 'vol. 14, pp. 24168-24181, Feb. 2026 (IF: 3.9)',
+    doi: '10.1109/ACCESS.2026.3661860',
+    year: 2026,
+  },
+  {
+    number: 26,
+    authors: 'C. H. Park, W. J. Ahn, and H. D. Choi*',
+    title: 'Toward Smooth Depth Driven by Selective Attention and Selective Aggregation',
+    venue: 'IEEE Transactions on Multimedia',
+    note: 'Feb. 2026 (IF: 9.7)',
+    doi: '10.1109/TMM.2026.3660136',
+    year: 2026,
   },
   {
     number: 25,
@@ -19,14 +47,6 @@ const internationalJournals = [
     venue: 'IEEE Transactions on Automation Science and Engineering',
     note: 'vol. 22, pp. 16322-16333, 2025',
     doi: '10.1109/TASE.2025.3576292',
-    year: 2025,
-  },
-  {
-    number: 24,
-    authors: 'C. H. Park, W. J. Ahn, and H. D. Choi*',
-    title: 'Toward Smooth Depth Driven by Selective Attention and Selective Aggregation',
-    venue: 'IEEE Transactions on Multimedia',
-    note: '(Accepted)',
     year: 2025,
   },
   {
@@ -288,7 +308,7 @@ export default function PublicationsPage() {
             transition={{ duration: 0.5 }}
           >
             {[
-              { label: 'International Journals', count: 26 },
+              { label: 'International Journals', count: 29 },
               { label: 'Domestic Journals', count: 6 },
               { label: 'Int. Conferences', count: 10 },
               { label: 'Dom. Conferences', count: 6 },
