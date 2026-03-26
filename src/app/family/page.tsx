@@ -24,6 +24,13 @@ const currentMembers: { phd: Member[]; master: Member[]; undergraduate: Member[]
   ],
   undergraduate: [
     {
+      name: 'Gwon Se Min',
+      nameKr: '권세민',
+      role: 'Undergraduate Student',
+      research: 'Quadruped SLAM, Agentic Locomotion, Autonomous Navigation',
+      image: '/figure/family/권세민.jpg',
+    },
+    {
       name: 'Kim Min Jae',
       nameKr: '김민재',
       role: 'Undergraduate Student',
@@ -45,6 +52,13 @@ const currentMembers: { phd: Member[]; master: Member[]; undergraduate: Member[]
       image: '/figure/family/이재욱.jpg',
     },
     {
+      name: 'Lee Seok Jun',
+      nameKr: '이석준',
+      role: 'Undergraduate Student',
+      research: 'Quadruped SLAM, Agentic Locomotion, Terrain Perception',
+      image: '/figure/family/이석준.jpg',
+    },
+    {
       name: 'Lim Young Rae',
       nameKr: '임영래',
       role: 'Undergraduate Student',
@@ -57,20 +71,6 @@ const currentMembers: { phd: Member[]; master: Member[]; undergraduate: Member[]
       role: 'Undergraduate Student',
       research: 'Quadruped Manipulator Arm, Vision-Language-Action (VLA), Embodied AI',
       image: '/figure/family/최우석.png',
-    },
-    {
-      name: 'Gwon Se Min',
-      nameKr: '권세민',
-      role: 'Undergraduate Student',
-      research: 'Quadruped SLAM, Agentic Locomotion, Autonomous Navigation',
-      image: '/figure/family/권세민.jpg',
-    },
-    {
-      name: 'Lee Seok Jun',
-      nameKr: '이석준',
-      role: 'Undergraduate Student',
-      research: 'Quadruped SLAM, Agentic Locomotion, Terrain Perception',
-      image: '/figure/family/이석준.jpg',
     },
   ],
 }
