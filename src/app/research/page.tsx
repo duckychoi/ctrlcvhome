@@ -10,7 +10,7 @@ interface ResearchArea {
   title: string
   description: string
   icon: string
-  media: { type: MediaType; src: string }
+  media: { type: MediaType; src: string; aspect: string }
   topics: string[]
   applications: string[]
 }
@@ -21,7 +21,7 @@ const researchAreas: ResearchArea[] = [
     title: 'Robust Control for Nonlinear Systems',
     description: 'Our research in robust control focuses on developing advanced control strategies for nonlinear systems with uncertainties and disturbances. We utilize fuzzy systems, LMI-based control design, and neural adaptive control techniques to ensure stability and performance.',
     icon: '🎯',
-    media: { type: 'video', src: '/figure/research/control.mp4' },
+    media: { type: 'video', src: '/figure/research/Robust cntrl.mp4', aspect: '1426/838' },
     topics: [
       'Fuzzy Systems & T-S Fuzzy Models',
       'LMI-based Controller Design',
@@ -37,7 +37,7 @@ const researchAreas: ResearchArea[] = [
     title: 'Reinforcement Learning',
     description: 'We investigate reinforcement learning algorithms for robotic systems, focusing on sample-efficient learning, safe exploration, and real-world deployment. Our work spans from theoretical foundations to practical implementations on physical robots.',
     icon: '🧠',
-    media: { type: 'image', src: '/figure/research/reinforcement.gif' },
+    media: { type: 'image', src: '/figure/research/reinforcement.gif', aspect: '1/1' },
     topics: [
       'Imitation Learning',
       'Inverse Reinforcement Learning',
@@ -53,7 +53,7 @@ const researchAreas: ResearchArea[] = [
     title: 'Deep Learning Vision',
     description: 'Our computer vision research leverages deep learning to solve challenging perception problems for robotics. We develop algorithms for depth estimation, image restoration, and 3D pose estimation that are robust to real-world conditions.',
     icon: '👁️',
-    media: { type: 'image', src: '/figure/research/3dgs.gif' },
+    media: { type: 'image', src: '/figure/research/3dgs_ours.gif', aspect: '400/254' },
     topics: [
       'Depth Estimation',
       'Image Restoration & Enhancement',
@@ -69,7 +69,7 @@ const researchAreas: ResearchArea[] = [
     title: 'Applications in Robot Systems & Hardware',
     description: 'We apply our theoretical research to real-world robotic systems. Our lab focuses on developing autonomous capabilities for various robotic platforms including legged robots, mobile manipulators, and unmanned aerial vehicles.',
     icon: '🤖',
-    media: { type: 'video', src: '/figure/research/slam.mp4' },
+    media: { type: 'video', src: '/figure/research/SLAM_original.mp4', aspect: '1/1' },
     topics: [
       'Quadruped Robot Control',
       'Mobile Manipulator Systems',
@@ -189,7 +189,10 @@ export default function ResearchPage() {
                 </div>
                 
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  <div className="relative aspect-square rounded-3xl overflow-hidden shadow-lg border border-black/5 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+                  <div
+                    className="relative w-full rounded-3xl overflow-hidden shadow-lg border border-black/5 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50"
+                    style={{ aspectRatio: area.media.aspect }}
+                  >
                     {area.media.type === 'video' ? (
                       <video
                         src={area.media.src}
@@ -197,14 +200,14 @@ export default function ResearchPage() {
                         loop
                         muted
                         playsInline
-                        className="absolute inset-0 w-full h-full object-contain p-4"
+                        className="absolute inset-0 w-full h-full object-cover"
                       />
                     ) : (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={area.media.src}
                         alt={area.title}
-                        className="absolute inset-0 w-full h-full object-contain p-4"
+                        className="absolute inset-0 w-full h-full object-cover"
                       />
                     )}
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur shadow-sm">
